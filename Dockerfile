@@ -8,9 +8,9 @@ RUN yum -y update
 RUN yum install -y wget bzip2
 
 # Anaconda installing
-RUN wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-RUN bash Anaconda3-2020.07-Linux-x86_64.sh -b -p /opt/anaconda3
-RUN rm Anaconda3-2020.07-Linux-x86_64.sh
+RUN wget https://repo.anaconda.com/archive/Anaconda3-2021.11-Linux-x86_64.sh
+RUN bash Anaconda3-2021.11-Linux-x86_64.sh -b -p /opt/anaconda3
+RUN rm Anaconda3-2021.11-Linux-x86_64.sh
 
 # Set path to conda
 ENV PATH /opt/anaconda3/bin:$PATH
